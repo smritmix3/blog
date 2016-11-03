@@ -1,0 +1,7 @@
+<h1>Article Listing</h1>
+<h2><%@articles.each do |article|%>
+<%=link_to article.title , article%><br/>
+
+<%end%>
+<%=link_to "Newarticles", "/articles/new "%>
+</h2>

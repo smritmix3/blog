@@ -1,0 +1,8 @@
+<h2><%= @article.title%>
+<br/>
+<%=@article.body%>
+</h2>
+
+
+<small><%=link_to "edit", "/articles/#{@article.id}/edit"%> <br/>
+<%=link_to "destroy", @article, data: {method: :delete, confirm: "are you sure you want to delete"}%>
